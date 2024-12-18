@@ -1,12 +1,4 @@
-from distutils.dist import command_re
-
 import telebot
-from telebot import types
-import threading
-import time
-from datetime import datetime, timedelta
-import requests
-import json
 import os
 import requests
 
@@ -16,7 +8,7 @@ bot = telebot.TeleBot(API_TOKEN)
 telebot.apihelper.CONNECT_TIMEOUT = 120
 telebot.apihelper.READ_TIMEOUT = 120
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3-turbo"
-headers = {"Authorization": "Bearer "}
+headers = {"Authorization": "Bearer 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"}
 
 def query(filename):
     with open(filename, "rb") as f:
