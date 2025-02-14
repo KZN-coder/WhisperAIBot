@@ -8,7 +8,7 @@ bot = telebot.TeleBot(API_TOKEN)
 telebot.apihelper.CONNECT_TIMEOUT = 120
 telebot.apihelper.READ_TIMEOUT = 120
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3-turbo"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer <your hf_... api code>"}
 
 def query(filename):
     with open(filename, "rb") as f:
